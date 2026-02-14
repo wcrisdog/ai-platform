@@ -41,11 +41,11 @@ gcloud builds submit --tag gcr.io/omega-healer-487316-e9/travel-agent .
 
 ```bash
 gcloud run deploy travel-agent \
-  --image gcr.io/PROJECT_ID/travel-agent \
+  --image gcr.io/omega-healer-487316-e9/travel-agent \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated \
-  --set-env-vars GOOGLE_API_KEY=your_actual_api_key
+  --set-env-vars GOOGLE_API_KEY=AIzaSyCkt_26_BrHghgGBSt3qgXJBW_eg8UjbPE
 ```
 
 *Note: `--allow-unauthenticated` makes the URL public. If you want to restrict access to just your family, you can remove this flag and add their Google accounts to the Cloud Run invoker role.*
